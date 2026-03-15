@@ -4,19 +4,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat '"C:\\Users\\kunal\\AppData\\Local\\Microsoft\\WindowsApps\\py.exe" app.py'
+                bat '"C:\\Users\\kunal\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" app.py'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                bat '"C:\\Users\\kunal\\AppData\\Local\\Microsoft\\WindowsApps\\py.exe" -m pip install -r requirements.txt'
+                bat '"C:\\Users\\kunal\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Test') {
             steps {
-                bat '"C:\\Users\\kunal\\AppData\\Local\\Microsoft\\WindowsApps\\py.exe" -m pytest'
+                bat '"C:\\Users\\kunal\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pytest'
             }
         }
 
