@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat ' C:\Users\kunal\AppData\Local\Microsoft\WindowsApps\python.exe python app.py'
+                bat ' "C:\Users\kunal\AppData\Local\Microsoft\WindowsApps\python.exe" python app.py'
             }
         }
 
